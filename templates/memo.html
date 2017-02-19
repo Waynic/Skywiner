@@ -28,7 +28,7 @@
 <p class="xxs">{{ ct[2] }}</p>
 <!--<p class="xxs r">{{ ct[1] }}</p>-->
 {% if session.get('log') and ct[1] != "" %}
-<a href="/del/0/{{ ct[3] }}" style="float:right"><button class="sm">删除</button></a>
+<a href="/del/{{ ct[3] }}" style="float:right"><button class="sm">删除</button></a>
 {% endif %}
 <hr>
 <pre>{{ ct[0] }}</pre>
