@@ -158,17 +158,16 @@ $(document).ready(function() {
         $("#reply").attr("value",reid);
     });
     $("#subm").click(function(){
-    if(document.form.title.value=="")
-    {
-    alert("忘写标题啦!");
-    return false;
-    } 
-    check=true;
+        check=true;
     });
 });
 
 function confirm() {
-    return check;
+    if(check==true)
+    {
+    return true;
+    }
+    return false;
 
 };
 
