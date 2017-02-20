@@ -67,24 +67,23 @@ def abstra(text):
 
 
 
-
-
-def abstr(text,img=""):
-    text=text[:1200]
-    text=text.replace(u'&nbsp;',u' ')
-    text=text.replace(u'</p',u'\n<')
-    text=text.replace(u'</b',u'\n<')
-    text=text.replace(u'</h',u'\n<')
-    text=text.replace(u'<br>',u'\n')
+#摘要生成函数，这个实现方式比较蠢，还有一个更快的在aids.py里，但很难看
+def abstr(text,img = ""):
+    text = text[:1200]
+    text = text.replace(u'&nbsp;',u' ')
+    text = text.replace(u'</p',u'\n<')
+    text = text.replace(u'</b',u'\n<')
+    text = text.replace(u'</h',u'\n<')
+    text = text.replace(u'<br>',u'\n')
     def fn(x, y):
         if x[-1] == "<" and y != ">":
             return x
         else:
             return x+y
-    text=reduce(fn,text)
-    text=text.replace(u'<>',u'')
-    text=text.replace(u'\n\n\n',u'\n')
-    text=text.replace(u'\n\n',u'\n')
+    text = reduce(fn,text)
+    text = text.replace(u'<>',u'')
+    text = text.replace(u'\n\n\n',u'\n')
+    text = text.replace(u'\n\n',u'\n')
     print text
     text = text[:120]+'...'+'<center>'+'<img src="'+img+'">'+'</center>'
     return text
