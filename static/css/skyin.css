@@ -164,7 +164,7 @@ span.bars{color:#fff;font-size:25px;line-height:36px;margin-right:6%;float:right
 .navx:hover{background:#BFD1DF;}
 
 
-cir{width:180px;height:180px;background-color:#BFD1DF;border-radius:90px;position:relative;top:-130px;float:left;font-family: 'Trebuchet MS',sans-serif;font-size:22px;color:#fff;}
+cir{width:180px;height:180px;background-color:#000000;border-radius:90px;position:relative;top:-130px;float:left;font-family: 'Trebuchet MS',sans-serif;font-size:22px;color:#fff;}
 
 cir:hover{background:#FFF;color:#222}
 flash{background:#FCF8E3;border-radius:5px;border:1px solid #FAEBCC;padding:5px 12px;font-size:18px;color:#8A6D3B}
